@@ -1,6 +1,6 @@
 .intro {
   display: flex;
-  height: 72vh;
+  height: 77vh;
   margin-top: 5rem;
 }
 
@@ -10,15 +10,6 @@
   flex: 1;
   flex-direction: column;
   gap: 2rem;
-}
-
-.i-right {
-  flex: 1;
-}
-
-.i-name {
-  display: flex;
-  flex-direction: column;
 }
 
 .i-name > :nth-child(1) {
@@ -31,6 +22,7 @@
   color: var(--orange);
   font-weight: bold;
   font-size: 3rem;
+  margin-top: 10px;
 }
 .i-name > :nth-child(3) {
   font-weight: 100;
@@ -53,4 +45,51 @@
 }
 .i-icons > *:hover {
   cursor: pointer;
+}
+
+.i-right {
+  flex: 1;
+  position: relative;
+}
+
+.i-right > * {
+  position: absolute;
+  z-index: 1;
+}
+.i-right > :nth-child(1) {
+  transform: scale(0.69);
+  left: -16%;
+  top: -8%;
+}
+.i-right > :nth-child(2) {
+  top: -4.6rem;
+  transform: scale(0.67);
+  left: -3rem;
+}
+.i-right > :nth-child(3) {
+  transform: scale(1.4);
+  left: 28%;
+}
+.i-right > :nth-child(4) {
+  transform: scale(0.6);
+  left: -20%;
+  top: -19%;
+  border-radius: 50%;
+  padding: 0;
+}
+.i-right > .i-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background-color: rgb(79, 179, 179);
+  filter: blur(72px);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
 }
