@@ -38,3 +38,8 @@
   background: #000;
   color: rgb(202, 201, 201);
 }
+@media screen and (max-width: 480px) {
+  .card {
+    width: auto;
+  }
+}

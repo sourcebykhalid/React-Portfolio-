@@ -1,6 +1,6 @@
 import React from "react";
 import "./FloatingDiv.css";
-function FloatinfDiv({ image, txt1, txt2 }) {
+function FloatingDiv({ image, txt1, txt2 }) {
   return (
     <div className="floatingdiv">
       <img src={image} alt="" />
@@ -13,4 +13,4 @@ function FloatinfDiv({ image, txt1, txt2 }) {
   );
 }
 
-export default FloatinfDiv;
+export default FloatingDiv;

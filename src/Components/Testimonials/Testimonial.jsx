@@ -8,6 +8,8 @@ import profilePic4 from "../../img/profile4.jpg";
 import { Pagination } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/css";
+import { ThemeContext } from "../../Context";
+import { useContext } from "react";
 function Testimonial() {
   const clients = [
     {
@@ -31,8 +33,11 @@ function Testimonial() {
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eaque impedit sunt nobis mollitia tenetur nostrum. Exercitationem ullam natus minus neque fugit! Aperiam suscipit consectetur perspiciatis qui iusto. Quis provident iure quas quibusdam dolorem, expedita distinctio aliquam atque corrupti molestias.",
     },
   ];
+
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div className="t-wrapper">
+    <div className="t-wrapper" id="Testimonials">
       <div className="t-heading">
         <span>Clients always get </span>
         <span>Exceptional Work</span>
@@ -53,7 +58,9 @@ function Testimonial() {
             <SwiperSlide key={index}>
               <div className="testimonial ">
                 <img src={client.img} alt="" />
-                <span>{client.review}</span>
+                <span style={{ color: darkMode ? "black" : "" }}>
+                  {client.review}
+                </span>
               </div>
             </SwiperSlide>
           );

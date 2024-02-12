@@ -6,11 +6,14 @@ import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
 import "swiper/css";
-
+import { ThemeContext } from "../../Context";
+import { useContext } from "react";
 function Portfolio() {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div className="portfolio">
-      <span>Recent Projects</span>
+    <div className="portfolio" id="Portfolio">
+      <span style={{ color: darkMode ? "white" : "" }}>Recent Projects</span>
       <span>Portfolio</span>
 
       <Swiper
