@@ -13,6 +13,7 @@ function Services() {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   const transition = { duration: 1, type: "spring" };
+
   return (
     <div className="services" id="Services">
       {/* Left Side*/}
@@ -36,6 +37,7 @@ function Services() {
       </div>
 
       {/* Right Side */}
+
       <div className="cards">
         <div
           className="blur s-blur1"
@@ -73,6 +75,7 @@ function Services() {
             detail={" Bootstrap, Tailwind CSS, Framer,etc"}
           />
         </motion.div>
+
         <div
           className="blur s-blur2"
           style={{ background: "var(--purple)" }}

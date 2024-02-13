@@ -15,7 +15,7 @@ function Testimonial() {
     {
       img: profilePic1,
       review:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eaque impedit sunt nobis mollitia tenetur nostrum. Exercitationem ullam natus minus neque fugit! Aperiam suscipit consectetur perspiciatis qui iusto. Quis provident iure quas quibusdam dolorem, expedita distinctio aliquam atque corrupti molestias.",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eaque impedit sunt nobis mollitia tenetur nostrum. Exercitationem ullam natus minus neque tis qui iusto. Quis provident iure quas quibusdam dolorem, expedita distinctio aliquam atque corrupti molestias.",
     },
     {
       img: profilePic2,
@@ -30,7 +30,7 @@ function Testimonial() {
     {
       img: profilePic4,
       review:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eaque impedit sunt nobis mollitia tenetur nostrum. Exercitationem ullam natus minus neque fugit! Aperiam suscipit consectetur perspiciatis qui iusto. Quis provident iure quas quibusdam dolorem, expedita distinctio aliquam atque corrupti molestias.",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eaque impedit sunt nobis mollitia tenetur nostrum. Exercitationem ullam natus minus neque fugit! Aperiam suscipit consectetur perspiciaias.",
     },
   ];
 

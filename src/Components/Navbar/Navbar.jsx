@@ -1,23 +1,27 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Navbar.css";
 import Toggle from "../Toggle/Toggle";
 import { Link } from "react-scroll";
+
+import { FaBars, FaTimes } from "react-icons/fa";
+import "../../index.css";
 function Navbar() {
+  const navRef = useRef();
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
   return (
-    <div className="n-wrapper">
+    <div className="n-wrapper sticky top-0 z-20 mx-auto">
       <div className="n-left">
-        <div className="n-name">Khalid</div>
+        <div className="n-name">
+          devFolio<span>●</span>
+        </div>
         <Toggle />
       </div>
       <div className="n-right">
-        <div className="n-list">
+        <nav className="n-list" ref={navRef}>
           <ul>
-            <Link
-              spy={true}
-              smooth={true}
-              to="Navbar"
-              activeClass="activeClass"
-            >
+            <Link spy={true} smooth={true} to="Home" activeClass="activeClass">
               <li>Home</li>{" "}
             </Link>
             <Link
@@ -52,11 +56,23 @@ function Navbar() {
             >
               <li>Testimonials</li>{" "}
             </Link>
+            <Link
+              spy={true}
+              smooth={true}
+              to="Contact"
+              activeClass="activeClass"
+            >
+              <button className="button n-button">Contact </button>
+            </Link>
           </ul>
-        </div>
-        <Link spy={true} smooth={true} to="Contact" activeClass="activeClass">
-          <button className="button n-button">Contact </button>
-        </Link>
+
+          <button onClick={showNavbar} className="nav-btn nav-close ">
+            <FaTimes />
+          </button>
+        </nav>
+        <button onClick={showNavbar} className="nav-btn fixed top-10 left-4">
+          <FaBars />
+        </button>
       </div>
     </div>
   );

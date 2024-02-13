@@ -62,4 +62,10 @@
   .cards > * {
     position: static;
   }
+  .s-blur1 {
+    display: none;
+  }
+  .s-blur2 {
+    display: none;
+  }
 }

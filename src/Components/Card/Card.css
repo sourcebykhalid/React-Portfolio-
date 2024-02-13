@@ -1,6 +1,6 @@
 .card {
   width: 10rem;
-  height: 13rem;
+  height: 16rem;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@
   background: #000;
   color: rgb(202, 201, 201);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
   .card {
     width: auto;
   }
