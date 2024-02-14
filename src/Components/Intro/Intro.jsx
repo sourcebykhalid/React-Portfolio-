@@ -19,10 +19,10 @@ function Intro() {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="intro shadow-xl shadow-slate-900">
+    <div id="Intro" className="intro shadow-xl shadow-slate-900 text-slate-800">
       <div className="i-left">
         <div className="i-name">
-          <span style={{ color: darkMode ? "white" : "" }}>Hi, I Am </span>
+          <span style={{ color: darkMode ? "black" : "" }}>Hi, I Am </span>
           <span>Khalid Shakeel</span> <br />
           <span>
             Frontend Software Engineer | Expertise in HTML, CSS, JS, React.js |

@@ -11,7 +11,10 @@ function Navbar() {
     navRef.current.classList.toggle("responsive_nav");
   };
   return (
-    <div className="n-wrapper sticky top-0 z-20 mx-auto">
+    <div
+      id="Navbar"
+      className="n-wrapper fixed top-0 z-10 bg-gray-200 p-5 w-full text-slate-800"
+    >
       <div className="n-left">
         <div className="n-name">
           devFolio<span>●</span>
@@ -21,7 +24,7 @@ function Navbar() {
       <div className="n-right">
         <nav className="n-list" ref={navRef}>
           <ul>
-            <Link spy={true} smooth={true} to="Home" activeClass="activeClass">
+            <Link spy={true} smooth={true} to="Intro" activeClass="activeClass">
               <li>Home</li>{" "}
             </Link>
             <Link
