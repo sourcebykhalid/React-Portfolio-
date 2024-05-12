@@ -7,7 +7,7 @@ import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import Boy from "../../img/removed.png";
+import Boy from "../../img/removed1.png";
 import Thumbup from "../../img/thumbup.png";
 import Crown from "../../img/crown.png";
 import Glassesimoji from "../../img/glassesimoji.png";
@@ -19,7 +19,10 @@ function Intro() {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div id="Intro" className="intro shadow-xl shadow-slate-900 text-slate-800">
+    <div
+      id="Intro"
+      className="intro shadow-xl mt-24 shadow-slate-900 text-slate-800"
+    >
       <div className="i-left">
         <div className="i-name">
           <span style={{ color: darkMode ? "black" : "" }}>Hi, I Am </span>

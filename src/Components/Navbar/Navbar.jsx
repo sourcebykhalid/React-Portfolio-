@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <div
       id="Navbar"
-      className="n-wrapper fixed top-0 z-10 bg-gray-200 p-5 w-full text-slate-800"
+      className="n-wrapper sm:fixed sm:top-0 z-10 bg-gray-200 py-6 w-full text-slate-800"
     >
       <div className="n-left">
         <div className="n-name">
